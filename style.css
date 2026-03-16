@@ -1,0 +1,329 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Arial';
+    margin: auto;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #7ec8ff, #000000);
+    color: white;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(145deg, #141414, #1f2a2a);
+    padding: 30px 40px;
+    margin-bottom: 50px;
+    box-shadow: 5px 15px 25px #00f5d4;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #171E2D;
+}
+
+.bio-button, .projekty-button, .kontakt-button, .portfolio-button {
+    color: #A3C96A;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+
+    font-size: 19px;
+}
+
+.kontakt-button{
+    margin-right: 5%;
+}
+
+.portfolio-button {
+    margin-right: auto; 
+    font-weight: bold; 
+    margin-left: 5%;
+}
+
+header{
+    background: linear-gradient(145deg, #141414, #1f2a2a);
+    color: white;
+    text-align: center;
+    padding: 80px 40px;
+    border-radius: 20px;
+    box-shadow: 5px 15px 25px #00f5d4;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 46px;
+    margin: 0 0 10px 0;
+}
+
+.bio{
+    font-size: 12px;
+    color: rgba(197, 202, 175, 0.575); 
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.skills{
+    font-size: 18px;
+    font-weight: bold;
+    color: #A3C96A; 
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+header a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #A3C96A;
+    color: #222;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover{
+    background-color: #8AA655;
+}
+
+section{
+    margin-top: 40px;
+}
+
+.bio-section{
+    background: linear-gradient(145deg, #141414, #1f2a2a);
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 5px 15px 25px #00f5d4;
+    width: 80%;
+    margin: 50px auto; 
+}
+
+.bio-section h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.bio-section p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(208, 211, 195, 0.644); 
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.skill-icon {
+    font-size: 30px; 
+}
+
+
+.skill-header h4 {
+    margin: 0;
+}
+
+h2, h3, h4 {
+    color: #FFFFFF; 
+}
+
+p {
+    color: #94A3B8; 
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px; 
+}
+
+.projekty-section{
+    background: linear-gradient(145deg, #141414, #1f2a2a);
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 5px 15px 25px #00f5d4;
+    width: 80%;
+    margin: 50px auto; 
+}
+
+.projekty-header {
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #171E2D; 
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #2a3441;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-info h4 {
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 0.9em;
+    color: #94A3B8;
+}
+
+.project-link {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    color: #00E5FF; 
+    border: 1px solid #00E5FF;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease; 
+}
+
+.project-link:hover {
+    background-color: #00E5FF;
+    color: #010409; 
+}
+
+.kontakt-section{
+    background: linear-gradient(145deg, #141414, #1f2a2a);
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 5px 15px 25px #00f5d4;
+    width: 80%;
+    margin: 50px auto 50px; 
+    text-align: center
+}
+
+.kontakt-section p {
+    margin-bottom: 30px;
+}
+
+.kontakt-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.email-btn { background-color: #00E5FF; color: #010409; }
+.github-btn { background-color: #333333; }
+.discord-btn { background-color: #5865F2; }
+.cv-btn { 
+    background-color: transparent; 
+    border: 2px solid #00E5FF; 
+    color: #00E5FF; 
+}
+
+.contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.cv-btn:hover {
+    background-color: #00E5FF;
+    color: #010409;
+}
+.email-active {
+    background-color: transparent;
+    color: #00E5FF;
+    border: 1px solid #00E5FF;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    cursor: text;
+    pointer-events: none;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 1px solid #171E2D;
+}
+
+footer p {
+    font-size: 0.85em;
+    color: #64748B;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .portfolio-button, .kontakt-button {
+        margin: 0
+    }
+
+    header, .bio-section, .projekty-section, .kontakt-section {
+        width: 95%; 
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+    header h1 {
+        font-size: 32px; 
+    }
+
+    .skills-grid, .projects-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .kontakt-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-btn {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .bio-button, .projekty-button, .kontakt-button, .portfolio-button {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+}

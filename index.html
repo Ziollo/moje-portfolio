@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio dewelopera - zobacz moje projekty, umiejętności i skontaktuj się ze mną.">
+    <title>Moje Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body id="home">
+    <nav>
+        <a href="#home" class="portfolio-button">Portfolio</a>
+        <a href="#bio" class="bio-button">O mnie</a>
+        <a href="#projekty" class="projekty-button">Projekty</a>
+        <a href="#kontakt" class="kontakt-button">Kontakt</a>
+    </nav>
+    
+    <header>
+        <h1> Witam, nazywam się Kacper Ziółek </h1>
+        <p class="bio"> i jestem początkującym programistą oraz studentem informatyki</p>
+        <p class="skills">HTML | CSS | JavaScript | Java</p>
+        <a href="#projekty"> Zobacz moje projekty </a>
+    </header> 
+    <main>
+    <section class="bio-section" id="bio"> 
+        <h2> O mnie: </h2>
+        <p> Cześć! Jestem absolwentem technikum informatycznego oraz studentem pierwszego roku informatyki na Polsko-Japońskiej Akademii Technik Komputerowych (PJATK). Interesuję się tworzeniem stron internetowych, stale rozwijam swoje umiejętności. Dodatkowo intensywnie uczę się języka Java, aby móc tworzyć również aplikacje desktopowe.</p>
+            
+        <div class="skills-section"> 
+            <h3> Moje umiejętności: </h3>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h4>HTML</h4>
+                        <i class="devicon-html5-plain colored skill-icon"></i>
+                    </div>
+                    <p>Znam dobrze podstawy HTML i potrafię wykorzystać wybrane zaawansowane zagadnienia. Pozwala mi to samodzielnie budować struktury stron internetowych oraz sprawnie diagnozować i naprawiać pojawiające się błędy. Tworzenie stron sprawia mi dużą satysfakcję i z chęcią rozwijam się w tej dziedzinie.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h4>CSS</h4>
+                        <i class="devicon-css3-plain colored skill-icon"></i>
+                    </div>
+                    <p>Posiadam solidne podstawy CSS, które stale poszerzam o nowe techniki. Dzięki temu potrafię tworzyć estetyczne i responsywne układy stron. Chętnie wdrażam też podstawowe animacje, które ożywiają witrynę i poprawiają doświadczenia użytkownika (UX).</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h4>JavaScript</h4>
+                        <i class="devicon-javascript-plain colored skill-icon"></i>
+                    </div>
+                    <p>Podobnie jak w przypadku HTML i CSS, opanowałem JavaScript na mocnym poziomie podstawowym. Wykorzystuję go do tworzenia interaktywnych i angażujących rozwiązań, które można przetestować w moich zrealizowanych projektach.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <h4>Java</h4>
+                        <i class="devicon-java-plain colored skill-icon"></i>
+                    </div>
+                    <p>Obecnie intensywnie uczę się języka Java i stale rozwijam swoje kompetencje. Język ten bardzo mnie fascynuje i widzę w nim duży potencjał. Aktualnie w ramach ćwiczeń skupiam się na pisaniu mini-gier w postaci aplikacji okienkowych (desktopowych).</p>
+                </div>
+            </div> 
+        </div> 
+    </section>
+    
+    <section class="projekty-section" id="projekty">
+        <div class="projekty-header">
+            <h2>Projekty:</h2>
+            <p>Poniżej przedstawiam moje dotychczasowe realizacje. Są to głównie interaktywne strony internetowe, w których w praktyce wykorzystuję język JavaScript. W moim portfolio znajdują się proste narzędzia, klasyczne gry przeglądarkowe z dynamiczną zmianą wyglądu. Aktualnie pracuję również nad mini-grą w postaci aplikacji okienkowej (desktopowej) w języku Java.</p>
+        </div>
+
+        <div class="projects-grid">
+        
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Kalkulator</h3>
+                    <p>W pełni funkcjonalny kalkulator internetowy wykonany przy użyciu HTML, CSS i JavaScript.</p>
+                </div>
+             <a href="https://ziollo.github.io/kalkulator/" class="project-link" target="_blank" rel="noopener"> Podgląd </a>
+            <a href="https://github.com/Ziollo/kalkulator" class="project-link" target="_blank" rel="noopener">Kod źródłowy</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Kamień, Papier, Nożyce</h3>
+                    <p>Klasyczna gra przeglądarkowa pozwalająca na rozgrywkę przeciwko komputerowi.</p>
+                </div>
+            <a href="https://ziollo.github.io/mini-gra/" class="project-link" target="_blank" rel="noopener"> Podgląd </a>
+            <a href="https://github.com/Ziollo/mini-gra" class="project-link" target="_blank" rel="noopener">Kod źródłowy</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="kontakt-section" id="kontakt">
+    <h2>Kontakt:</h2>
+    <p>Zainteresowały Cię moje projekty? Szukasz osoby do swojego zespołu lub masz do mnie pytanie? Zapraszam do kontaktu!</p>
+
+    <div class="kontakt-links">
+        <button onclick="pokazEmail(this)" class="contact-btn email-btn">Pokaż E-mail</button>
+    
+        <a href="https://github.com/Ziollo" target="_blank" rel="noopener" class="contact-btn github-btn">Mój GitHub</a>
+    </div>
+</section>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Kacper Ziółek. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+     <script src="script.js"></script>
+</body>
+</html>
