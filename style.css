@@ -1,9 +1,10 @@
 html {
     scroll-behavior: smooth;
 }
-body{
-    font-family: 'Arial';
-    margin: auto;
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
     scroll-behavior: smooth;
     max-width: 100%;
     flex-direction: column;
@@ -13,14 +14,15 @@ body{
     color: white;
 }
 
-nav{
+/* --- Nawigacja --- */
+nav {
     position: sticky;
     top: 0;
     z-index: 1000;
     background: linear-gradient(145deg, #141414, #1f2a2a);
-    padding: 30px 40px;
+    padding: 20px 40px;
     margin-bottom: 50px;
-    box-shadow: 5px 15px 25px #00f5d4;
+    box-shadow: 0 5px 25px rgba(0, 245, 212, 0.4);
     display: flex;
     align-items: center;
     border-bottom: 1px solid #171E2D;
@@ -32,54 +34,54 @@ nav{
     border-radius: 5px;
     transition: background-color 0.3s ease;
     padding: 10px 20px;
-
     font-size: 19px;
 }
 
-.kontakt-button{
+.kontakt-button {
     margin-right: 5%;
 }
 
 .portfolio-button {
-    margin-right: auto; 
-    font-weight: bold; 
+    margin-right: auto;
+    font-weight: bold;
     margin-left: 5%;
 }
 
-header{
+/* --- Header --- */
+header {
     background: linear-gradient(145deg, #141414, #1f2a2a);
     color: white;
     text-align: center;
     padding: 80px 40px;
     border-radius: 20px;
-    box-shadow: 5px 15px 25px #00f5d4;
+    box-shadow: 5px 15px 25px rgba(0, 245, 212, 0.3);
     width: 80%;
     margin: 0 auto;
 }
 
-header h1{
+header h1 {
     font-size: 46px;
     margin: 0 0 10px 0;
 }
 
-.bio{
-    font-size: 12px;
-    color: rgba(197, 202, 175, 0.575); 
+.bio {
+    font-size: 14px;
+    color: rgba(197, 202, 175, 0.7);
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
 
-.skills{
+.skills {
     font-size: 18px;
     font-weight: bold;
-    color: #A3C96A; 
+    color: #A3C96A;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
 
-header a{
+header a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #A3C96A;
     color: #222;
     text-decoration: none;
@@ -88,88 +90,68 @@ header a{
     transition: background-color 0.3s ease;
 }
 
-header a:hover{
+header a:hover {
     background-color: #8AA655;
 }
 
-section{
+/* --- Sekcje Ogólne --- */
+section {
     margin-top: 40px;
 }
 
-.bio-section{
-    background: linear-gradient(145deg, #141414, #1f2a2a);
-    padding: 20px 40px;
-    border-radius: 20px;
-    box-shadow: 5px 15px 25px #00f5d4;
-    width: 80%;
-    margin: 50px auto; 
-}
-
-.bio-section h2{
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.bio-section p{
-    font-size: 16px;
-    line-height: 1.6;
-    color: rgba(208, 211, 195, 0.644); 
-}
-
-.skill-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
-}
-
-.skill-icon {
-    font-size: 30px; 
-}
-
-
-.skill-header h4 {
-    margin: 0;
-}
-
 h2, h3, h4 {
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 
 p {
-    color: #94A3B8; 
+    color: #94A3B8;
+}
+
+.bio-section, .projekty-section, .kontakt-section {
+    background: linear-gradient(145deg, #141414, #1f2a2a);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 5px 15px 25px rgba(0, 245, 212, 0.2);
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* --- Umiejętności --- */
+.bio-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(208, 211, 195, 0.8);
 }
 
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
-.projekty-section{
-    background: linear-gradient(145deg, #141414, #1f2a2a);
-    padding: 20px 40px;
-    border-radius: 20px;
-    box-shadow: 5px 15px 25px #00f5d4;
-    width: 80%;
-    margin: 50px auto; 
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-.projekty-header {
-    margin-bottom: 30px;
+.skill-icon {
+    font-size: 30px;
 }
 
+/* --- Projekty --- */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(3, 1fr); /* Zmienione na 3 kolumny dla lepszego wyglądu */
     gap: 20px;
 }
 
 .project-card {
-    background-color: #171E2D; 
+    background-color: #171E2D;
     border-radius: 8px;
-    padding: 20px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -177,48 +159,36 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.project-info h4 {
-    color: #FFFFFF;
+.project-info h3 {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.project-info p {
-    font-size: 0.9em;
-    color: #94A3B8;
-}
-
+/* --- TO JEST KLUCZOWA POPRAWKA DLA PRZYCISKU --- */
 .project-link {
-    display: block;
+    display: inline-block;
     text-align: center;
     background-color: transparent;
-    color: #00E5FF; 
+    color: #00E5FF;
     border: 1px solid #00E5FF;
-    padding: 10px;
+    padding: 10px 25px; /* Dodane większe dopełnienie bocznego */
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     margin-top: 20px;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
+    align-self: center; /* Centruje przycisk wewnątrz karty */
+    min-width: 120px;   /* Zapewnia stałą minimalną szerokość */
 }
 
 .project-link:hover {
     background-color: #00E5FF;
-    color: #010409; 
+    color: #010409;
 }
 
-.kontakt-section{
-    background: linear-gradient(145deg, #141414, #1f2a2a);
-    padding: 20px 40px;
-    border-radius: 20px;
-    box-shadow: 5px 15px 25px #00f5d4;
-    width: 80%;
-    margin: 50px auto 50px; 
-    text-align: center
-}
-
-.kontakt-section p {
-    margin-bottom: 30px;
+/* --- Kontakt --- */
+.kontakt-section {
+    text-align: center;
 }
 
 .kontakt-links {
@@ -235,53 +205,39 @@ p {
     text-decoration: none;
     font-weight: bold;
     color: #FFFFFF;
+    border: none;
+    cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .email-btn { background-color: #00E5FF; color: #010409; }
 .github-btn { background-color: #333333; }
-.discord-btn { background-color: #5865F2; }
-.cv-btn { 
-    background-color: transparent; 
-    border: 2px solid #00E5FF; 
-    color: #00E5FF; 
-}
 
 .contact-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-.cv-btn:hover {
-    background-color: #00E5FF;
-    color: #010409;
-}
 .email-active {
     background-color: transparent;
     color: #00E5FF;
     border: 1px solid #00E5FF;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
     cursor: text;
     pointer-events: none;
 }
 
+/* --- Footer --- */
 footer {
     text-align: center;
     padding: 25px 0;
-    margin-top: 40px;
+    margin-top: auto;
     border-top: 1px solid #171E2D;
 }
 
-footer p {
-    font-size: 0.85em;
-    color: #64748B;
-    margin: 0;
-}
-
+/* --- Responsywność --- */
 @media (max-width: 1024px) {
     .projects-grid {
-        grid-template-columns: repeat(2, 1fr); /
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -290,40 +246,22 @@ footer p {
         flex-direction: column;
         padding: 20px;
         gap: 15px;
-        text-align: center;
     }
 
     .portfolio-button, .kontakt-button {
-        margin: 0
+        margin: 0;
     }
 
     header, .bio-section, .projekty-section, .kontakt-section {
-        width: 95%; 
+        width: 95%;
         padding: 40px 20px;
-        box-sizing: border-box;
     }
 
     header h1 {
-        font-size: 32px; 
+        font-size: 32px;
     }
 
     .skills-grid, .projects-grid {
-        grid-template-columns: 1fr; 
-    }
-
-    .kontakt-links {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .contact-btn {
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .bio-button, .projekty-button, .kontakt-button, .portfolio-button {
-        font-size: 16px;
-        padding: 8px 10px;
+        grid-template-columns: 1fr;
     }
 }
