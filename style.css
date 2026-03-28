@@ -14,7 +14,6 @@ body {
     color: white;
 }
 
-/* --- Nawigacja --- */
 nav {
     position: sticky;
     top: 0;
@@ -47,7 +46,6 @@ nav {
     margin-left: 5%;
 }
 
-/* --- Header --- */
 header {
     background: linear-gradient(145deg, #141414, #1f2a2a);
     color: white;
@@ -94,7 +92,6 @@ header a:hover {
     background-color: #8AA655;
 }
 
-/* --- Sekcje Ogólne --- */
 section {
     margin-top: 40px;
 }
@@ -116,7 +113,6 @@ p {
     margin: 50px auto;
 }
 
-/* --- Umiejętności --- */
 .bio-section p {
     font-size: 16px;
     line-height: 1.6;
@@ -141,22 +137,35 @@ p {
     font-size: 30px;
 }
 
-/* --- Projekty --- */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Zmienione na 3 kolumny dla lepszego wyglądu */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .project-card {
     background-color: #171E2D;
     border-radius: 8px;
-    padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border: 1px solid #2a3441;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-info {
+    padding: 25px 25px 10px 25px;
+    flex-grow: 1;
 }
 
 .project-info h3 {
@@ -164,21 +173,26 @@ p {
     margin-bottom: 15px;
 }
 
-/* --- TO JEST KLUCZOWA POPRAWKA DLA PRZYCISKU --- */
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: auto;
+}
+
 .project-link {
-    display: inline-block;
+    display: block;
     text-align: center;
     background-color: transparent;
     color: #00E5FF;
     border: 1px solid #00E5FF;
-    padding: 10px 25px; /* Dodane większe dopełnienie bocznego */
+    padding: 10px 25px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 20px;
+    margin: 10px 25px 0 25px;
     transition: all 0.3s ease;
-    align-self: center; /* Centruje przycisk wewnątrz karty */
-    min-width: 120px;   /* Zapewnia stałą minimalną szerokość */
+    font-size: 14px;
 }
 
 .project-link:hover {
@@ -186,7 +200,6 @@ p {
     color: #010409;
 }
 
-/* --- Kontakt --- */
 .kontakt-section {
     text-align: center;
 }
@@ -210,8 +223,14 @@ p {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.email-btn { background-color: #00E5FF; color: #010409; }
-.github-btn { background-color: #333333; }
+.email-btn {
+    background-color: #00E5FF; 
+    color: #010409; 
+}
+
+.github-btn { 
+    background-color: #333333; 
+}
 
 .contact-btn:hover {
     transform: translateY(-3px);
@@ -226,7 +245,6 @@ p {
     pointer-events: none;
 }
 
-/* --- Footer --- */
 footer {
     text-align: center;
     padding: 25px 0;
@@ -234,7 +252,6 @@ footer {
     border-top: 1px solid #171E2D;
 }
 
-/* --- Responsywność --- */
 @media (max-width: 1024px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
